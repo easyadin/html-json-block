@@ -1,0 +1,31 @@
+{
+  "name": "html-json-block",
+  "version": "0.0.1",
+  "description": "JSONified html",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pub": "npm publish --access=public",
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Israel Ayokunnu",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "microbundle": "^0.15.0"
+  },
+  "dependencies": {
+    "util": "^0.12.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/easyadin/html-json-block.git"
+  }
+}
